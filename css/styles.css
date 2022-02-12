@@ -230,6 +230,7 @@ Footer Section
 .extended-article {
   max-width: 40rem;
   margin: 2rem auto;
+  margin-bottom: 4rem;
 }
 .extended-article-header {
   display: grid;
@@ -310,4 +311,38 @@ Footer Section
   padding: 0;
   margin: 0;
   font-weight: 400;
+}
+.extended-article-footer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 5px;
+}
+.extended-article-footer span {
+  font-weight: 800;
+}
+
+#divider-dotted {
+  border-top-style: dotted;
+  background: none;
+}
+.divider-item {
+  width: 100vw;
+}
+.suggestions {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+.suggestions-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 800px) {
+  .suggestions-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 414px) {
+  .suggestions-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
