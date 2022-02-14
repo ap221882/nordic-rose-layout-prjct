@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 li {
   list-style-type: none;
@@ -49,7 +49,7 @@ Navbar
 .nav-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+  justify-items: stretch;
 }
 .header {
   justify-self: start;
@@ -124,11 +124,19 @@ Navbar
 /* ===========================
   Gallery Section
   =========================== */
-
+.gallery-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 0.5rem;
+}
 .article {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
+}
+.articles {
+  margin-bottom: 1.5rem;
 }
 .article-img-container {
   margin: 0 20px;
@@ -332,6 +340,13 @@ Footer Section
   max-width: 80vw;
   margin: 0 auto;
 }
+.suggestions-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 0.5rem;
+}
+
 .suggestions-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
