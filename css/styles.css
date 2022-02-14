@@ -228,6 +228,7 @@ Footer Section
 .divider-item {
   margin: 2rem auto;
   width: 40rem;
+
   /* margin: 0; */
 }
 @media screen and (max-width: 900px) {
@@ -334,9 +335,9 @@ Footer Section
   border-top-style: dotted;
   background: none;
 }
-.divider-item {
-  width: 100vw;
-}
+/* .divider-item { */
+/* width: 100vw; */
+/* } */
 .suggestions {
   max-width: 80vw;
   margin: 0 auto;
