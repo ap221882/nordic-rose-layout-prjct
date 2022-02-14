@@ -136,7 +136,7 @@ Navbar
 }
 .article-para p {
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 26.4px;
 }
 @media screen and (min-width: 414px) {
@@ -336,13 +336,67 @@ Footer Section
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.suggestions-container article p {
+  font-size: 18px;
+}
 @media screen and (max-width: 800px) {
   .suggestions-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 15px;
+  }
+  .article-4,
+  .article-5,
+  .article-6 {
+    display: none;
   }
 }
-@media screen and (max-width: 414px) {
+/* @media screen and (max-width: 414px) {
   .suggestions-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+} */
+.newsletter-container {
+  margin: 2rem 0;
+}
+.newsletter {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 12px solid black;
+}
+.newsletter h2 {
+  margin-top: 1.5rem;
+}
+.newsletter p {
+  max-width: 80%;
+  margin: 0 auto;
+  line-height: 25px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+form {
+  display: grid;
+  height: 2rem;
+  grid-template-columns: 1fr auto;
+  width: 80%;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+}
+.email::placeholder {
+  padding: 10px;
+}
+
+.submit {
+  width: 8rem;
+  text-transform: uppercase;
+  background-color: black;
+  color: var(--clr-white);
+}
+@media screen and (max-width: 850px) {
+  .newsletter {
+    width: 100%;
   }
 }
